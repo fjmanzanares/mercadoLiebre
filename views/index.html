@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mercado Liebre</title>
   <link rel="stylesheet" href="/css/styles.css" />
-  <title>Document</title>
+  <!-- implementar normalize?? -->
+  <!-- utilizar alguna google fonts -->
 </head>
 
 <body>
@@ -13,33 +15,41 @@
   <header>
     <!-- Tendremos que maquetar:-->
     <!-- ● Logo -->
-    <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" class="logo">
-    <br>
+    <div><img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" class="logo"></div>
+
     <div><img src="/images/img-home-banner.jpg" alt="img-home-banner" class="banner"></div>
+
     <div>Lugar para poner la barra de búsqueda</div>
+
     <div>Comprá en cuotas y sin tarjeta de crédito</div>
+
     <!-- ● Barra de navegación que posea las siguientes opciones: -->
     <nav>
       <ul type="none">
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Tiendas Oficiales</a></li>
-        <li><a href="#">Vender</a></li>
-        <li><a href="#">Ayuda</a></li>
-        <br />
-        <li><a href="#">Creá tu cuenta</a></li>
-        <li><a href="#">Ingresá</a></li>
-        <li><a href="#">Mis compras</a></li>
+        <div>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </div>
+
+        <div>
+          <li><a href="#">Creá tu cuenta</a></li>
+          <li><a href="#">Ingresá</a></li>
+          <li><a href="#">Mis compras</a></li>
+        </div>
       </ul>
     </nav>
-     <!-- Lupa: <i class="fas fa-search">
+    <!-- Lupa: <i class="fas fa-search">
       Menu Hamburguesa: <i class="fas fa-bars"></i>
       Mano con dolares: <i class="fas fa-hand-holding-usd"></i>
       crea tu cuenta:  <i class="far fa-address-card"></i>
       ingresar: <i class="fas fa-sign-in-alt"></i>
       carrito: <i class="fas fa-shopping-basket"> -->
   </header>
+
   <main>
-    <section>
+    <section class="section-main-home">
       <h3>Basado en tu última visita</h3>
       <article>
         <div>
@@ -62,7 +72,7 @@
       </article>
     </section>
 
-    <section>
+    <section class="section-main-home">
       <h3>Sección de Ofertas</h3>
       <article>
         <div>
@@ -86,32 +96,33 @@
       </article>
     </section>
   </main>
+
   <footer>
-    <section>
+    <section">
       <h3>
         Pagá con tarjeta o en efectivo
       </h3>
       Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
       puntos de pago. ¡Y siempre es seguro!
     </section>
-    <section>
+    <section">
       <h3>
         Envío gratis desde $ 2.500
       </h3>
       Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
       productos. Es un beneficio de Mercado Puntos.
     </section>
-    <section>
+    <section">
       <h3>
         Seguridad, de principio a fin
       </h3>
       ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
       porque estás siempre protegid@.
     </section>
-    <section>
+    <section">
       Copyright © 1999-2020 MercadoLiebre S.R.L.
     </section>
-<!-- Tarjeta de credito: <i class="fas fa-credit-card"></i>
+    <!-- Tarjeta de credito: <i class="fas fa-credit-card"></i>
     Regalo: <i class="fas fa-gift"></i>
     Personita con escudo (seguridad):  <i class="fas fa-user-shield"></i> -->
   </footer>
