@@ -2,9 +2,9 @@
   "name": "clase_06_12_2022",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon /app.js"
+    "start": "nodemon ./app.js"
   },
   "keywords": [],
   "author": "",
