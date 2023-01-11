@@ -4,67 +4,76 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <title>Mercado Liebre</title>
-  
+
   <link rel="stylesheet" href="/css/styles.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-  <!-- duda: ¿¿implementar normalize?? -->
+
+ 
+  <!-- duda: ¿¿implementar normalize??  dijo profe que NO-->
+ 
+
   <!-- FUENTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
+  <header class="main-header">
+    <div class="main-header-top-bar">
+      <!-- ● Logo -->
+      <img src="/images/logo-mercado-liebre.svg" alt="logo-ML" class="logo">
+      <h2 class="copy-header">
+        <i class="fas fa-hand-holding-usd"></i>
+        Comprá en cuotas y sin tarjeta de crédito
+      </h2>
 
-  <header>
+      <!-- Lupa: -->
+      <div class="search-bar">
+        <!-- (((poner aquí la barra de búsqueda))) -->
+        <div class="search-glass" display="inline"><i class="fas fa-search"></i></div>
+      </div>
 
-    <!-- ● Logo -->
-    <div><img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" class="logo"></div>
+      
+    </div>
 
-    <div><img src="/images/img-home-banner.jpg" alt="img-home-banner" class="banner"></div>
-
-    <!-- Lupa: -->
-    <div class="search-bar" >
-      <!-- (((poner aquí la barra de búsqueda))) -->
-      <div class="search-glass" display="inline"><i class="fas fa-search"></i></div></div>
-
-    <div><h4>Comprá en cuotas y sin tarjeta de crédito</h4></div>
+    <!-- Menu Hamburguesa:  -->
+    <a href="#" class="burger"><i class="fas fa-bars"></i></a>
 
     <!-- ● Barra de navegación que posea las siguientes opciones: -->
-    <nav>
-      <!-- Menu Hamburguesa:  -->
-      <div class="burger-menu"><i class="fas fa-bars"></i>
+    <nav class="main-navbar">
 
-        <ul type="none">
-          <div>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Tiendas Oficiales</a></li>
-            <!-- Mano con dolares:  -->
-            <div class="icon"><i class="fas fa-hand-holding-usd"></i>
-              <li><a href="#">Vender</a></li>
-            </div>
-            <li><a href="#">Ayuda</a></li>
-          </div>
+      <ul type="none" class="left-navbar">
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Tiendas Oficiales</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
 
-          <div>
-            <!-- crea tu cuenta:   -->
-            <div class="icon"><i class="fas fa-address-card"></i>
+      <ul type="none" class="right-navbar">
+        <!-- crea tu cuenta:   -->
+        <li><a href="#">
+            Creá tu cuenta
+            <i class="fas fa-address-card"></i>
+          </a></li>
 
-              <li><a href="#">Creá tu cuenta</a></li>
-            </div>
-            <!-- ingresar:  -->
-            <div class="icon"><i class="fas fa-sign-in-alt"></i>
-              <li><a href="#">Ingresá</a></li>
-            </div>
-            <!-- carrito:  -->
-            <div class="icon"><i class="fas fa-shopping-basket"></i>
-              <li><a href="#">Mis compras</a></li>
-            </div>
-          </div>
-        </ul>
-      </div>
+        <!-- ingresar:  -->
+        <li><a href="#">
+            Ingresá
+            <i class="fas fa-sign-in-alt"></i>
+          </a></li>
+
+        <!-- carrito:  -->
+        <li><a href="#">
+            Mis compras
+            <i class="fas fa-shopping-basket"></i>
+          </a></li>
+      </ul>
     </nav>
 
 
@@ -72,6 +81,7 @@
   </header>
 
   <main>
+    <img src="/images/img-home-banner.jpg" alt="img-home-banner" class="banner">
     <section class="section-main-home">
       <h3>Basado en tu última visita</h3>
       <article>
@@ -150,27 +160,27 @@ del artículo -->
       Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
       puntos de pago. ¡Y siempre es seguro!
       </section>
-      <section">
-        <h3>
-          <!-- Regalo:  -->
-          <i class="fas fa-gift"></i>
-          Envío gratis desde $ 2.500
-        </h3>
-        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-        productos. Es un beneficio de Mercado Puntos.
-        </section>
         <section">
           <h3>
-            <!-- Personita con escudo (seguridad):   -->
-            <i class="fas fa-user-shield"></i>
-            Seguridad, de principio a fin
+            <!-- Regalo:  -->
+            <i class="fas fa-gift"></i>
+            Envío gratis desde $ 2.500
           </h3>
-          ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-          porque estás siempre protegid@.
+          Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+          productos. Es un beneficio de Mercado Puntos.
+        </section>
+          <section">
+            <h3>
+              <!-- Personita con escudo (seguridad):   -->
+              <i class="fas fa-user-shield"></i>
+              Seguridad, de principio a fin
+            </h3>
+            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.
           </section>
           <section">
             Copyright © 1999-2020 MercadoLiebre S.R.L.
-            </section>
+          </section>
 
 
 

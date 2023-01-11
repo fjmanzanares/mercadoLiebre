@@ -1,164 +1,132 @@
-/* Para maquetar el logo de envío nos ayudan con los siguientes estilos: */
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+ * {
+     box-sizing: border-box;
+ }
 
-    /* Nuestro nuevo desafío es desarrollar la Home utilizando Flexbox, teniendo en cuenta que
- el sitio debe ser 100% responsive. ¿Qué debemos modificar para que, aplicando Flexbox,
- solo se vea un artículo si estamos en mobile, dos artículos para tablet y cuatro artículos
- para la versión desktop? */
-
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Paleta de colores
-Amarillo: #EAC926;*/
-
-/* Encabezado: nos piden que la primera parte del encabezado quede de la siguiente
-manera:
-○ Logo: tiene que medir el 50% de su contenedor.
-○ Barra de búsqueda: tiene que medir el 50% de su contenedor. */
-header {
-    background-color: #EAC926;
-}
-
-header li,
-header i {
-    display: flex;
-    /* duda: ¿por qué estaba en display: block si había puesto display: flex en body? */
-    flex-wrap: nowrap;
-    justify-content: left;
-}
-
-/*Azul: #03264C;
-Celeste: #1259c3;
-Gris oscuro: #666;
-Gris claro: #ebebeb;
-Verde: #39b54a; */
-
-
-/*Tamaños Tipográficos*/
-/*Cuerpos de texto: 12px*/
-body {
-    font-size: 12px;
-}
-
-main section article i {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-}
-
-/*Titulares (Basado en tu última visita/Ofertas): 24px*/
-h3 {
-    font-size: 24px;
-}
-
-/*Precios: 18px*/
-.precio {
-    font-size: 18px;
-}
-
-/*Descuentos: 16px*/
-/*Descripciones: 16px*/
-.descuento,
-.descripcion {
-    font-size: 16px;
-}
-
-html {
-    text-align: center;
-}
-
-img {
-    width: 50vw;
-}
-
-.logo {
-    width: 100vw;
-}
-
-.banner {
-    width: 100vw;
-}
-
-/* Debemos centrar la sección main y que ocupe un 90% del ancho de la pantalla. */
-main {
-    width: 90vw;
-}
-
-/* Entre cada artículo hay una separación de 10 píxeles */
-article {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-/* Solo en el caso mobile la descripción del artículo no se visualizará. */
-.descripcion {
+ .search-bar    {
     display: none;
-}
+ }
 
-/* Nos piden que manejemos el logo del envío, el precio, el porcentaje de descuento
-y la descripción del artículo como elementos de una caja dentro de la caja general
-del artículo.
-● Nos piden que la misma tenga un borde superior de 1 píxel, línea sólida y color
-#ebebeb. */
-.precio,
-.descuento,
-.descripcion {
-    border-top: 1px solid #ebebeb;
-    /* Debe tener separado el contenido de sus bordes en 15 píxeles en cada uno de sus
-lados */
-    padding: 15px;
-}
+ body {
+     font-family: 'Roboto';
+ }
 
-/* Navegación en tablets (ancho mínimo 361 px) */
+ .main-header {
+     background-color: #EAC926;
+     padding: 20px;
+ }
 
-@media (min-width: 361px) {
+ .burger {
+     background-color: #03264C;
+     color: #ffffff;
+     display: block;
+     max-width: 50px;
+     padding: 15px 0px;
+     border-radius: 8px;
+     text-align: center;
+     font-size: 18px;
+     margin: auto;
+ }
 
-    /* Agregar box-shadow. Para los dispositivos tablet o de resoluciones superiores, para ello nos pasaron esta propiedad* con los valores de CSS correspondientes: */
-    * {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+ .logo {
+     width: 200px;
+ }
 
-    .descripcion {
+ .copy-header {
+     font-weight: 400;
+     text-align: center;
+ }
+
+ .main-navbar {
+     display: none;
+ }
+
+ .main-navbar ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+
+ .main-navbar a {
+     text-decoration: none;
+     color: #222222;
+     display: inline-block;
+     padding: 5px 0;
+     font-size: 17px;
+ }
+
+ .banner    {
+    width: 100%;
+ }
+
+ section img {
+    max-width: 100%;
+ }
+
+ @media (min-width: 768px) {
+     .main-header-top-bar {
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .copy-header {
+         max-width: 350px;
+     }
+
+     .burger {
+         display: none;
+     }
+
+     .main-navbar {
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .main-navbar ul {
+         display: flex;
+     }
+
+     .main-navbar li {
+         margin: 0 5px;
+     }
+ }
+
+ @media (min-width: 1200px) {
+
+    .search-bar {
         display: flex;
-    }
+    } 
+    .main-header-top-bar,
+     .main-navbar {
+         max-width: 1200px;
+         margin: auto;
 
-    /* Para dispositivos con resoluciones igual o superior a una tablet, el header debe visualizarse de
-la siguiente manera: M04C20*/
+     }
 
+     .main-navbar {
+         margin-top: 50px;
+     }
 
-}
+     .main-navbar li {
+         margin: 0 10px;
+     }
 
-/*  Navegación en desktop (ancho mínimo 769 px) */
-@media (min-width: 769px) {
-    .descripcion {
-        display: flex;
-    }
+     .main-navbar a {
+         font-size: 19px;
+     }
 
-}
+     .main-header-top-bar {
+         align-items: center;
+     }
 
-/* Para la sección del Header debemos:
-● Solo para la versión mobile, ocultar el site y el login navbar. */
+     .copy-header {
+         max-width: none;
+         font-size: 18px;
+         font-weight: 400;
+         margin: 0;
+     }
 
-/* ● Para las versiones desktop y tablet mostrar el site y login navbar, pero ocultar la imagen
-del menú hamburguesa. */
-/* duda: ¿cómo conviene manejar estas excepciones de display: none */
+     .logo {
+         width: 250px;
+     }
+
+ }
