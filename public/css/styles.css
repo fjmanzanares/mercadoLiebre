@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Roboto';
+    margin: auto
 }
 
 .search-bar {
@@ -16,25 +17,32 @@ body {
     padding: 20px;
 }
 
+.main-header-top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: safe center;
+}
 .burger {
     background-color: #03264C;
     color: #ffffff;
     display: block;
-    max-width: 50px;
-    padding: 15px 0px;
-    border-radius: 8px;
+    max-width: 2.5rem;
+    padding: 0.5rem 0;
+    border-radius: 0.7rem;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.2rem;
     margin: auto;
 }
 
 .logo {
-    width: 200px;
+    width: 70%;
 }
 
 .copy-header {
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .main-navbar {
@@ -92,6 +100,24 @@ section img {
 }
 
 @media (min-width: 1200px) {
+
+    div {
+        border: solid red dashed
+    }
+    
+    section {
+        border: solid green dashed
+    }
+    
+    article {
+        border: solid blue dashed
+    }
+    
+    li {
+        border: solid black dashed
+    }
+    
+    
 
     .search-bar {
         display: flex;
