@@ -9,9 +9,9 @@
 
   <link rel="stylesheet" href="/css/styles.css" />
 
- 
+
   <!-- duda: ¿¿implementar normalize??  dijo profe que NO-->
- 
+
 
   <!-- FUENTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,26 +24,33 @@
 </head>
 
 <body>
+
   <header class="main-header">
+
     <div class="main-header-top-bar">
       <!-- ● Logo -->
-      <img src="/images/logo-mercado-liebre.svg" class="logo" alt="logo-ML">
-      <h2 class="copy-header">
-        <i class="fas fa-hand-holding-usd"></i>
-        Comprá en cuotas y sin tarjeta de crédito
-      </h2>
+      <div><img src="/images/logo-mercado-liebre.svg" class="logo" alt="logo-ML"></div>
 
-      <!-- Lupa: -->
-      <div class="search-bar">
-        <!-- (((poner aquí la barra de búsqueda))) -->
-        <div class="search-glass" display="inline"><i class="fas fa-search"></i></div>
+      <!-- Barra de busqueda -->
+      <div class="search-glass" display="inline">
+        <!-- Lupa: -->
+        Buscar productos, marcas
+        <i class="fas fa-search"></i>
       </div>
 
-      
+
+      <!-- Copy -->
+      <div>
+        <h2 class="copy-header">
+          <i class="fas fa-hand-holding-usd"></i>
+          Comprá en cuotas y sin tarjeta de crédito
+        </h2>
+      </div>
+
     </div>
 
     <!-- Menu Hamburguesa:  -->
-    <a href="#" class="burger"><i class="fas fa-bars"></i></a>
+    <div class="burger"><i class="fas fa-bars"></i></div>
 
     <!-- ● Barra de navegación que posea las siguientes opciones: -->
     <nav class="main-navbar">
@@ -58,40 +65,78 @@
       <ul class="right-navbar">
         <!-- crea tu cuenta:   -->
         <li><a href="#">
-            Creá tu cuenta
             <i class="fas fa-address-card"></i>
+            Creá tu cuenta
           </a></li>
 
         <!-- ingresar:  -->
         <li><a href="#">
-            Ingresá
             <i class="fas fa-sign-in-alt"></i>
+            Ingresá
           </a></li>
         <!-- carrito:  -->
         <li><a href="#">
-            Mis compras
             <i class="fas fa-shopping-basket"></i>
+            Mis compras
           </a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+
+    <!-- Formulario -->
+    <!-- <form action="/crear-producto" method="POST" class="create-form">
+      <div class="control-formulario">
+        <label>Nombre del producto:</label>
+        <input type="text" name="nombre" class="control">
+      </div>
+      <div class="control-formulario">
+        <label>Precio:</label>
+        <input type="number" name="precio" placeholder="123.45" class="control">
+      </div>
+      <div class="control-formulario">
+        <label>Categoría:</label>
+        <select name="categoria" class="control">
+          <option value="hogar">Hogar</option>
+          <option value="electro">Electro</option>
+          <option value="indumentaria">Indumentaria</option>
+
+        </select>
+      </div>
+      <div class="control-formulario"><label>Ciudad:</label>
+        <select name="ciudad" class="control">
+          <option value="baires">Buenos Aires</option>
+          <option value="ros">Rosario</option>
+          <option value="mdz">Mendoza</option>
+        </select>
+      </div>
+      <div class="control-formulario">
+        <label for="">Descripción:</label>
+        <textarea class="control" name="descripcion" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="control-formulario">
+        <label>Está en oferta:</label>
+        <input type="radio" name="oferta">
+      </div>
+      <button type="reset" class="button-formulario">Borrar</button>
+      <button type="submit" class="button-formulario">Guardar</button>
+    </form> -->
     <img src="/images/img-home-banner.jpg" alt="img-home-banner" class="banner">
     <section class="section-main-home">
       <h3>Basado en tu última visita</h3>
       <article>
         <!-- Nos piden que manejemos el logo del envío, el precio, el porcentaje de descuento
-y la descripción del artículo como elementos de una caja dentro de la caja general
-del artículo -->
+        y la descripción del artículo como elementos de una caja dentro de la caja general
+        del artículo -->
         <div>
-          <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" />
+          <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" class="product-image" />
           <div class="precio">$6.770</div>
           <div class="descuento">40% OFF</div>
           <div class="descripcion">Cafetera Moulinex</div>
         </div>
         <div>
-          <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" />
+          <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" class="product-image" />
           <div class="precio">$230.000</div>
           <div class="descuento">20% OFF</div>
           <div class="descripcion">MacBook Pro 2019</div>
@@ -99,13 +144,13 @@ del artículo -->
       </article>
       <article>
         <div>
-          <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10" />
+          <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10" class="product-image" />
           <div class="precio">$70.500</div>
           <div class="descuento">10% OFF</div>
           <div class="descripcion">Samsung Galaxy S10</div>
         </div>
         <div>
-          <img src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart" />
+          <img src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart" class="product-image" />
           <div class="precio">$23.200</div>
           <div class="descuento">5% OFF</div>
           <div class="descripcion">SmartTv Samsung 43"</div>
@@ -117,13 +162,13 @@ del artículo -->
       <h3>Ofertas</h3>
       <article>
         <div>
-          <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" />
+          <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" class="product-image" />
           <div class="precio">$6.770</div>
           <div class="descuento">40% OFF</div>
           <div class="descripcion">Cafetera Moulinex</div>
         </div>
         <div>
-          <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" />
+          <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" class="product-image" />
           <div class="precio">$230.000</div>
           <div class="descuento">20% OFF</div>
           <div class="descripcion">MacBook Pro 2019</div>
@@ -131,13 +176,13 @@ del artículo -->
       </article>
       <article>
         <div>
-          <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10" />
+          <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10" class="product-image" />
           <div class="precio">$70.500</div>
           <div class="descuento">10% OFF</div>
           <div class="descripcion">Samsung Galaxy S10</div>
         </div>
         <div>
-          <img src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart" />
+          <img src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart" class="product-image" />
           <div class="precio">$23.200</div>
           <div class="descuento">5% OFF</div>
           <div class="descripcion">SmartTv Samsung 43"</div>
@@ -156,30 +201,27 @@ del artículo -->
       Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
       puntos de pago. ¡Y siempre es seguro!
       </section>
+      <section">
+        <h3>
+          <!-- Regalo:  -->
+          <i class="fas fa-gift"></i>
+          Envío gratis desde $ 2.500
+        </h3>
+        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+        productos. Es un beneficio de Mercado Puntos.
+        </section>
         <section">
           <h3>
-            <!-- Regalo:  -->
-            <i class="fas fa-gift"></i>
-            Envío gratis desde $ 2.500
+            <!-- Personita con escudo (seguridad):   -->
+            <i class="fas fa-user-shield"></i>
+            Seguridad, de principio a fin
           </h3>
-          Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-          productos. Es un beneficio de Mercado Puntos.
-        </section>
-          <section">
-            <h3>
-              <!-- Personita con escudo (seguridad):   -->
-              <i class="fas fa-user-shield"></i>
-              Seguridad, de principio a fin
-            </h3>
-            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-            porque estás siempre protegid@.
+          ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+          porque estás siempre protegid@.
           </section>
           <section">
             Copyright © 1999-2020 MercadoLiebre S.R.L.
-          </section>
-
-
-
+            </section>
   </footer>
 </body>
 
