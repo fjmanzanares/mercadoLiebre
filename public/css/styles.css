@@ -2,51 +2,47 @@
     box-sizing: border-box;
 }
 
-body {
+body.body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
+    background-color: lightgray;
+    margin: 0;
 }
-
-h3 {
-    font-size: 24px;
-}
-
 
 .main-header {
     background-color: #EAC926;
     padding: 24px;
+    width: 100vw;
 }
 
-.main-header-top-bar {
+div.main-header-top-bar {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
+
+.logo {
+    width: 50%;
+}
+
+.copy-header {
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    width: 75vw;
+}
+
 .burger {
     background-color: #03264C;
     color: #ffffff;
     display: block;
     max-width: 30px;
-    padding: 5px 0;
+    padding: 5 7;
     border-radius: 8px;
     text-align: center;
     font-size: 18px;
     margin: auto;
-}
-
-.logo {
-    width: 250px;
-}
-
-.copy-header {
-    font-weight: 400;
-    text-align: center;
-    font-size: 24px;
-}
-
-.main-navbar {
-    display: none;
 }
 
 .main-navbar ul {
@@ -63,34 +59,57 @@ h3 {
     font-size: 12px;
 }
 
+main {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
 .banner {
     width: 100vw;
+}
+
+.section-main-home,
+.section-main-home article,
+.section-main-home article div,
+.section-main-home article div img {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.section-main-home h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: #666;
 }
 
 section img {
     width: 100%;
 }
 
-.create-form{
+.create-form {
     padding: 20px 15px;
 }
 
-.control-formulario{
+.control-formulario {
     margin-bottom: 15px;
 }
 
-.control-formulario label{
+.control-formulario label {
     margin-bottom: 5px;
     font-style: italic;
     display: block;
 }
 
-.control{
+.control {
     width: 100px;
     padding: 8px;
 }
 
-.button-formulario{
+.button-formulario {
     background-color: #39b54a;
     border: none;
     font-size: 20px;
@@ -99,53 +118,90 @@ section img {
     border-radius: 5px;
 }
 
-footer, footer section, footer section h3{
+footer,
+section.footer-section,
+section.footer-section h3,
+section.footer-section i {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-footer section h3 i.fas{
+footer section h3 i.fas {
     font-size: 2em;
     margin-bottom: 10px;
+    color: #1259c3;
 }
 
-header div.search-glass{
-    background-color: #fff;
-    border: 1px solid #000;
-    color: darkgrey;
-    width: 300px;
+footer section h3 {
+    font-size: 18px;
+    color: #555;
+}
+
+.footer-section {
+    font-size: 12px;
+    color: #777
+}
+
+.logo-and-bar{
     display: flex;
     justify-content: space-between;
-    padding: 3 4 2 2;
-    
 }
 
-header div.main-header-top-bar div {
-    max-width: 25vw;
+.search-bar,
+.search-glass,
+.search-bar input {
+    color: #555;
 }
 
-header div.search-glass {
+.search-bar{
+    width: 50%;
+    height: fit-content;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar input{
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.main-navbar{
     display: none;
 }
 
 @media (min-width: 768px) {
-    .main-header-top-bar {
+    div.main-header-top-bar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+    
 
-    .logo{
-        width: 100%;
+    .logo {
+        width: 45%;
+    }
+    
+    .logo-and-bar{
+        width: 75%;
     }
 
     .copy-header {
-        max-width: 350px;
+        display: inline;
+        width: 30%;
         text-align: right;
-        /* font-size: 16px; */
     }
 
+    .search-bar,
     .search-glass {
+        width: 45%;
         display: flex;
     }
 
@@ -186,20 +242,24 @@ header div.search-glass {
     ul, li, h1, h2, h3, img, a {
         border: 2px black dashed
     } */
-    
-    .search-glass {
+
+    .logo-and-bar{
+        width: 75%;
         display: flex;
+        justify-content: space-between;
     }
 
-    .burger{
+    .logo{
+        widt: 40%;
+    }
+
+    .search-bar{
+        display: flex;
+        width: 40%;
+    }
+
+    .burger {
         display: none
-    }
-
-    .main-header-top-bar,
-    .main-navbar {
-        max-width: 1200px;
-        margin: auto;
-
     }
 
     .main-navbar {
@@ -214,7 +274,8 @@ header div.search-glass {
         font-size: 19px;
     }
 
-    .main-header-top-bar {
+    div.main-header-top-bar, .logo-and-bar {
+        display: flex;
         align-items: center;
     }
 
@@ -223,10 +284,6 @@ header div.search-glass {
         font-size: 18px;
         font-weight: 400;
         margin: 0;
-    }
-
-    .logo {
-        width: 250px;
     }
 
 }
