@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mercado Liebre</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles-register.css" />
+  <!-- FUENTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
+  <!-- FONT AWESOME -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <!-- duda: ¿¿implementar normalize??  dijo profe que NO-->
+</head>
+
+<body class="body">
+
+  <header class="main-header">
+
+    <div class="main-header-top-bar">
+
+      <div class="logo-and-bar">
+
+        <!-- ● Logo -->
+
+        <img src="/images/logo-mercado-liebre.svg" class="logo" alt="logo-ML">
+
+        <!-- Barra de busqueda -->
+        <div class="search-bar" display="inline">
+          <input class="search-input" type="text" placeholder="Buscar productos, marcas">
+
+          <!-- Lupa: -->
+          <i class="fas fa-search" class="search-glass" display="inline">
+          </i>
+          </input>
+        </div>
+      </div>
+
+
+      <!-- Copy -->
+      <h2 class="copy-header">
+        <i class="fas fa-hand-holding-usd"></i>
+        Comprá en cuotas y sin tarjeta de crédito
+      </h2>
+
+    </div>
+
+    <!-- Menu Hamburguesa:  -->
+    <div class="burger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- ● Barra de navegación -->
+    <nav class="main-navbar">
+
+      <ul class="left-navbar">
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Tiendas Oficiales</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+
+      <ul class="right-navbar">
+        <!-- crea tu cuenta:   -->
+        <li><a href="#"><i class="fas fa-address-card"></i>
+            Creá tu cuenta</a>
+        </li>
+
+        <!-- ingresar:  -->
+        <li><a href="#"><i class="fas fa-sign-in-alt"></i>
+            Ingresá</a>
+        </li>
+
+        <!-- carrito:  -->
+        <li><a href="#"><i class="fas fa-shopping-basket"></i>
+            Mis compras</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+<h4>Iniciá sesion</h4>
+<form action="/" method="GET">
+
+  <!-- ■ Nombre de usuario -->
+  <label for="user">
+    <input type="text" placeholder="Nombre de usuario">
+  </label>    
+
+  <!-- ■ Contraseña -->
+  <label for="password">
+    <input type="text" placeholder="Contraseña">
+  </label>
+
+  <!-- ■ Botón de enviar que nos lleve a la página principal -->
+  <label for="" class="button"><button type="submit" href="/">Enviar</button></label>
+
+</form>
+
+  <footer>
+    <section class="footer-section">
+      <h3>
+        <!-- Tarjeta de credito:  -->
+        <i class="fas fa-credit-card"></i>
+        Pagá con tarjeta o en efectivo
+      </h3>
+      Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+      puntos de pago. ¡Y siempre es seguro!
+    </section>
+    <section class="footer-section">
+      <h3>
+        <!-- Regalo:  -->
+        <i class="fas fa-gift"></i>
+        Envío gratis desde $ 2.500
+      </h3>
+      Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+      productos. Es un beneficio de Mercado Puntos.
+    </section>
+    <section class="footer-section">
+      <h3>
+        <!-- Personita con escudo (seguridad):   -->
+        <i class="fas fa-user-shield"></i>
+        Seguridad, de principio a fin
+      </h3>
+      ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+    </section>
+    <section class="footer-section">
+      Copyright © 1999-2020 MercadoLiebre S.R.L.
+    </section>
+  </footer>
+</body>
+
+</html>
