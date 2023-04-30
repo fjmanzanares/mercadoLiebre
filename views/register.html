@@ -85,26 +85,26 @@
 <form action="/" method="GET">
 <!-- Nombre y apellido -->
 <label for="name">
-  <input type="text" placeholder="Nombre y apellido">
+  <input type="text" placeholder="Nombre y apellido" pattern="[A-Za-z0-9_]{2,15}" required>
 </label>
   <!-- ■ Nombre de usuario -->
   <label for="user">
-    <input type="text" placeholder="Nombre de usuario">
+    <input type="text" placeholder="Nombre de usuario" pattern="[A-Za-z0-9_]{2,15}" required>
   </label>    
   <!-- ■ Fecha de nacimiento -->
   <h5>Fecha de nacimiento</h5>
   <label for="birth">
-    <input type="date" placeholder="mm/dd/yyyy">
+    <input type="date" placeholder="mm/dd/yyyy" required>
   </label>
   <!-- ■ Domicilio -->
   <label for="adress">
-    <input type="text" placeholder="Domicilio">
+    <input type="text" placeholder="Domicilio" pattern="[A-Za-z0-9_]{2,15}" required>
   </label>
   <!-- ■ Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender) -->
   <h5>Perfil del usuario</h5>
   <div class="roles">
     <label for="rol" class="rol">
-      <input type="radio" class="rol" name="rol">Comprador
+      <input type="radio" class="rol" name="rol" required>Comprador
     </label>
     <label for="rol" class="rol">
       <input type="radio" class="rol" name="rol">Vendedor
@@ -145,11 +145,11 @@
   </label>
   <!-- ■ Contraseña -->
   <label for="password">
-    <input type="text" placeholder="Contraseña">
+    <input type="password" placeholder="Contraseña" required>
   </label>
   <!-- ■ Confirmar contraseña -->
   <label for="password">
-    <input type="text" placeholder="Confirmar contraseña">
+    <input type="password" placeholder="Confirmar contraseña" required>
   </label>
   <!-- ■ Botón de enviar que nos lleve a la página principal -->
   <label for="" class="button"><button type="submit" href="/">Enviar</button></label>

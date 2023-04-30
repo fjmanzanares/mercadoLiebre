@@ -65,12 +65,12 @@
 
       <ul class="right-navbar">
         <!-- crea tu cuenta:   -->
-        <li><a href="#"><i class="fas fa-address-card"></i>
+        <li><a href="/registro"><i class="fas fa-address-card"></i>
             Creá tu cuenta</a>
         </li>
 
         <!-- ingresar:  -->
-        <li><a href="#"><i class="fas fa-sign-in-alt"></i>
+        <li><a href="/login"><i class="fas fa-sign-in-alt"></i>
             Ingresá</a>
         </li>
 
@@ -86,12 +86,12 @@
 
   <!-- ■ Nombre de usuario -->
   <label for="user">
-    <input type="text" placeholder="Nombre de usuario">
+    <input type="text" placeholder="Nombre de usuario" pattern="[A-Za-z0-9_]{2,15}" required>
   </label>    
 
   <!-- ■ Contraseña -->
   <label for="password">
-    <input type="text" placeholder="Contraseña">
+    <input type="password" placeholder="Contraseña">
   </label>
 
   <!-- ■ Botón de enviar que nos lleve a la página principal -->
