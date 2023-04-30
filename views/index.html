@@ -4,23 +4,15 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Mercado Liebre</title>
-
   <link rel="stylesheet" href="/css/styles.css" />
-
-
-  <!-- duda: ¿¿implementar normalize??  dijo profe que NO-->
-
-
   <!-- FUENTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
   <!-- FONT AWESOME -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-
+  <!-- duda: ¿¿implementar normalize??  dijo profe que NO-->
 </head>
 
 <body class="body">
@@ -30,24 +22,28 @@
     <div class="main-header-top-bar">
 
       <div class="logo-and-bar">
-          <!-- ● Logo -->
-          <img src="/images/logo-mercado-liebre.svg" class="logo" alt="logo-ML">
-          <!-- Barra de busqueda -->
-          <div class="search-bar" display="inline">
-            <input class="search-input" type="text" placeholder="Buscar productos, marcas">
-              <!-- Lupa: -->
-              <i class="fas fa-search" class="search-glass" display="inline">
-              </i>
-            </input>
-          </div>
+
+        <!-- ● Logo -->
+
+        <img src="/images/logo-mercado-liebre.svg" class="logo" alt="logo-ML">
+
+        <!-- Barra de busqueda -->
+        <div class="search-bar" display="inline">
+          <input class="search-input" type="text" placeholder="Buscar productos, marcas">
+
+          <!-- Lupa: -->
+          <i class="fas fa-search" class="search-glass" display="inline">
+          </i>
+          </input>
+        </div>
       </div>
 
 
       <!-- Copy -->
-        <h2 class="copy-header">
-          <i class="fas fa-hand-holding-usd"></i>
-          Comprá en cuotas y sin tarjeta de crédito
-        </h2>
+      <h2 class="copy-header">
+        <i class="fas fa-hand-holding-usd"></i>
+        Comprá en cuotas y sin tarjeta de crédito
+      </h2>
 
     </div>
 
@@ -56,7 +52,7 @@
       <i class="fas fa-bars"></i>
     </div>
 
-    <!-- ● Barra de navegación que posea las siguientes opciones: -->
+    <!-- ● Barra de navegación -->
     <nav class="main-navbar">
 
       <ul class="left-navbar">
@@ -87,49 +83,10 @@
   <img src="/images/img-home-banner.jpg" alt="img-home-banner" class="banner">
   <main>
 
-    <!-- Formulario -->
-    <!-- <form action="/crear-producto" method="POST" class="create-form">
-      <div class="control-formulario">
-        <label>Nombre del producto:</label>
-        <input type="text" name="nombre" class="control">
-      </div>
-      <div class="control-formulario">
-        <label>Precio:</label>
-        <input type="number" name="precio" placeholder="123.45" class="control">
-      </div>
-      <div class="control-formulario">
-        <label>Categoría:</label>
-        <select name="categoria" class="control">
-          <option value="hogar">Hogar</option>
-          <option value="electro">Electro</option>
-          <option value="indumentaria">Indumentaria</option>
 
-        </select>
-      </div>
-      <div class="control-formulario"><label>Ciudad:</label>
-        <select name="ciudad" class="control">
-          <option value="baires">Buenos Aires</option>
-          <option value="ros">Rosario</option>
-          <option value="mdz">Mendoza</option>
-        </select>
-      </div>
-      <div class="control-formulario">
-        <label for="">Descripción:</label>
-        <textarea class="control" name="descripcion" id="" cols="30" rows="10"></textarea>
-      </div>
-      <div class="control-formulario">
-        <label>Está en oferta:</label>
-        <input type="radio" name="oferta">
-      </div>
-      <button type="reset" class="button-formulario">Borrar</button>
-      <button type="submit" class="button-formulario">Guardar</button>
-    </form> -->
     <section class="section-main-home">
       <h3>Basado en tu última visita</h3>
       <article>
-        <!-- Nos piden que manejemos el logo del envío, el precio, el porcentaje de descuento
-        y la descripción del articulo como elementos de una caja dentro de la caja general
-        del articulo -->
         <div class="articulo">
           <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" class="product-image" />
           <div class="div-truck"><i class="fas fa-truck" class="camioncito"></i></div>
@@ -139,7 +96,8 @@
           </div>
           <div class="descripcion">Cafetera Moulinex</div>
         </div>
-        <div class="articulo">          <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" class="product-image" />
+        <div class="articulo"> <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019"
+            class="product-image" />
           <div class="div-truck"><i class="fas fa-truck" class="camioncito"></i></div>
           <div class="pre-des">
             <div class="precio">$230.000</div>
