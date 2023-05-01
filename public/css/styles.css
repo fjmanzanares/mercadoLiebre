@@ -56,6 +56,18 @@ div.main-header-top-bar {
     outline: none;
 }
 
+.search-bar button{
+    opacity: 0;
+    width: 14%;
+    padding-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 24px;
+    top: -2px;
+    align-self: flex-end;
+}
 .search-bar i{
     width: 10%;
     display: flex;
