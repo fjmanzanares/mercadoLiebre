@@ -10,7 +10,7 @@
   <!-- FUENTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <!-- FONT AWESOME -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <!-- duda: ¿¿implementar normalize??  dijo profe que NO-->
@@ -29,16 +29,13 @@
         <img src="/images/logo-mercado-liebre.svg" class="logo" alt="logo-ML">
 
         <!-- Barra de busqueda -->
-        <form class="search-bar" display="inline" method="GET" action="/">
+        <form class="search-bar" display="inline" method="GET" action="/login">
           <input class="search-input" type="text" placeholder="Buscar productos, marcas">
 
           <!-- Lupa: -->
-          <button type="submit" href="/">
-            <i class="fas fa-search" class="search-glass" display="inline">
-            </i>
+          <button type="submit" href="/login">
+            <i class="fas fa-search" class="search-glass" display="inline"></i>
           </button>
-          <i class="fas fa-search" class="search-glass" display="inline">
-          </i>
           </input>
         </form>
       </div>
@@ -85,81 +82,81 @@
       </ul>
     </nav>
   </header>
-<h4>Creá tu cuenta</h4>
-<form action="/" method="GET" class="creacion">
-<!-- Nombre y apellido -->
-<label for="name">
-  <input type="text" placeholder="Nombre y apellido" pattern="[A-Za-z0-9_]{2,15}" required>
-</label>
-  <!-- ■ Nombre de usuario -->
-  <label for="user">
-    <input type="text" placeholder="Nombre de usuario" pattern="[A-Za-z0-9_]{2,15}" required>
-  </label>    
-  <!-- ■ Fecha de nacimiento -->
-  <h5>Fecha de nacimiento</h5>
-  <label for="birth">
-    <input type="date" placeholder="mm/dd/yyyy" required>
-  </label>
-  <!-- ■ Domicilio -->
-  <label for="adress">
-    <input type="text" placeholder="Domicilio" pattern="[A-Za-z0-9_]{2,15}" required>
-  </label>
-  <!-- ■ Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender) -->
-  <h5>Perfil del usuario</h5>
-  <div class="roles">
-    <label for="rol" class="rol">
-      <input type="radio" class="rol" name="rol" required>Comprador
+  <h4>Creá tu cuenta</h4>
+  <form action="/" method="GET" class="creacion">
+    <!-- Nombre y apellido -->
+    <label for="name">
+      <input type="text" placeholder="Nombre y apellido" pattern="[A-Za-z0-9_]{2,15}" required>
     </label>
-    <label for="rol" class="rol">
-      <input type="radio" class="rol" name="rol">Vendedor
+    <!-- ■ Nombre de usuario -->
+    <label for="user">
+      <input type="text" placeholder="Nombre de usuario" pattern="[A-Za-z0-9_]{2,15}" required>
     </label>
-  </div>
-  <!-- ■ Categorías de interés (puede elegir más de una) -->
-  <h5>Intereses</h5>
-  <div class="intereses">
-    <!-- ● Electro -->
-    <label for="intereses" class="intereses">
-      <input type="checkbox" class="intereses" name="intereses">Electro
+    <!-- ■ Fecha de nacimiento -->
+    <h5>Fecha de nacimiento</h5>
+    <label for="birth">
+      <input type="date" placeholder="mm/dd/yyyy" required>
     </label>
-    <!-- ● Moda -->
-    <label for="intereses" class="intereses">
-      <input type="checkbox" class="intereses" name="intereses">Moda
+    <!-- ■ Domicilio -->
+    <label for="adress">
+      <input type="text" placeholder="Domicilio" pattern="[A-Za-z0-9_]{2,15}" required>
     </label>
+    <!-- ■ Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender) -->
+    <h5>Perfil del usuario</h5>
+    <div class="roles">
+      <label for="rol" class="rol">
+        <input type="radio" class="rol" name="rol" required>Comprador
+      </label>
+      <label for="rol" class="rol">
+        <input type="radio" class="rol" name="rol">Vendedor
+      </label>
+    </div>
+    <!-- ■ Categorías de interés (puede elegir más de una) -->
+    <h5>Intereses</h5>
+    <div class="intereses">
+      <!-- ● Electro -->
+      <label for="intereses" class="intereses">
+        <input type="checkbox" class="intereses" name="intereses">Electro
+      </label>
+      <!-- ● Moda -->
+      <label for="intereses" class="intereses">
+        <input type="checkbox" class="intereses" name="intereses">Moda
+      </label>
 
-    <!-- ● Hogar -->
-    <label for="intereses" class="intereses">
-      <input type="checkbox" class="intereses" name="intereses">Hogar
-    </label>
+      <!-- ● Hogar -->
+      <label for="intereses" class="intereses">
+        <input type="checkbox" class="intereses" name="intereses">Hogar
+      </label>
 
-    <!-- ● Juguetería -->
-    <label for="intereses" class="intereses">
-      <input type="checkbox" class="intereses" name="intereses">Juguetería
-    </label>
+      <!-- ● Juguetería -->
+      <label for="intereses" class="intereses">
+        <input type="checkbox" class="intereses" name="intereses">Juguetería
+      </label>
 
-    <!-- ● Vida sana -->
-    <label for="intereses" class="intereses">
-      <input type="checkbox" class="intereses" name="intereses">Vida sana
-    </label>
+      <!-- ● Vida sana -->
+      <label for="intereses" class="intereses">
+        <input type="checkbox" class="intereses" name="intereses">Vida sana
+      </label>
 
-  </div>
-  <!-- ■ Foto de usuario -->
-  <h5>Foto de usuario</h5>
-  <label for="img" class="img">
-    <input type="file" class="img">
-  </label>
-  <!-- ■ Contraseña -->
-  <label for="password">
-    <input type="password" placeholder="Contraseña" required>
-  </label>
-  <!-- ■ Confirmar contraseña -->
-  <label for="password">
-    <input type="password" placeholder="Confirmar contraseña" required>
-  </label>
-  <!-- ■ Botón de enviar que nos lleve a la página principal -->
-  <label for="" class="button"><button type="submit" href="/">Enviar</button></label>
-  <!-- ■ Botón de borrar todos los datos del formulario -->
-  <label for="" class="button"><button type="reset">Borrar datos</button></label>
-</form>
+    </div>
+    <!-- ■ Foto de usuario -->
+    <h5>Foto de usuario</h5>
+    <label for="img" class="img">
+      <input type="file" class="img">
+    </label>
+    <!-- ■ Contraseña -->
+    <label for="password">
+      <input type="password" placeholder="Contraseña" required>
+    </label>
+    <!-- ■ Confirmar contraseña -->
+    <label for="password">
+      <input type="password" placeholder="Confirmar contraseña" required>
+    </label>
+    <!-- ■ Botón de enviar que nos lleve a la página principal -->
+    <label for="" class="button"><button type="submit" href="/">Enviar</button></label>
+    <!-- ■ Botón de borrar todos los datos del formulario -->
+    <label for="" class="button"><button type="reset">Borrar datos</button></label>
+  </form>
 
   <footer>
     <section class="footer-section">

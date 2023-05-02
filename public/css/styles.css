@@ -22,7 +22,7 @@ div.main-header-top-bar {
 }
 
 .logo {
-    width: 50%;
+    width: 45%;
 }
 
 .logo-and-bar{
@@ -32,7 +32,7 @@ div.main-header-top-bar {
 }
 
 .search-bar{
-    width: 50%;
+    width: 45%;
     height: fit-content;
     padding: 0;
     background-color: #fff;
@@ -45,9 +45,9 @@ div.main-header-top-bar {
 
 .search-bar input{
     border: 0;
-    width: 90%;
+    width: 85%;
     border-radius: 7px;
-    padding: 4px;
+    padding: 4 0 4 4;
     font-size: 12px;
 }
 
@@ -56,18 +56,21 @@ div.main-header-top-bar {
     outline: none;
 }
 
-.search-bar button{
-    opacity: 0;
-    width: 14%;
+.search-bar button {
+    background-color: #fff;
+    width: 10%;
     padding-right: 7px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 24px;
-    top: -2px;
     align-self: flex-end;
+    color: #666;
+    border-radius: 5px;
+    height: 1.6111em;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+    border: none;
 }
+
 .search-bar i{
     width: 10%;
     display: flex;
@@ -136,7 +139,6 @@ main, footer {
 .section-main-home article div.articulo{
     display: flex;
     margin-bottom: 10px;
-    border-top: solid 1px #666;
     padding: 15px;
     background-color: #fff;
     flex-flow: column nowrap;
@@ -254,6 +256,18 @@ section.footer-section i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+footer{
+    margin-top: 2em;
+}
+
+section.footer-section h3{
+    margin: 0;
+}
+
+section.footer-section{
+    margin-bottom: 2em;
 }
 
 footer section h3 i.fas {
