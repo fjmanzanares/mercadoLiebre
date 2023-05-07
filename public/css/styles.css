@@ -22,7 +22,8 @@ div.main-header-top-bar {
 }
 
 .logo {
-    width: 45%;
+    width: 50%;
+    padding: 0 10;
 }
 
 .logo-and-bar{
@@ -32,9 +33,10 @@ div.main-header-top-bar {
 }
 
 .search-bar{
-    width: 45%;
+    width: 50%;
     height: fit-content;
     padding: 0;
+    margin: 0 10 0 30;
     background-color: #fff;
     font-size: 12px;
     color: #666;
@@ -47,7 +49,7 @@ div.main-header-top-bar {
     border: 0;
     width: 85%;
     border-radius: 7px;
-    padding: 4 0 4 4;
+    padding: 2 2 2 10;
     font-size: 12px;
 }
 
@@ -74,7 +76,7 @@ div.main-header-top-bar {
 .search-bar i{
     width: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding-right: 7px;
 }
@@ -130,22 +132,22 @@ main, footer {
     flex-direction: column;
 }
 
-.section-main-home article {
+.section-main-home div.card {
     width: 100%;
     display: flex;
     flex-flow: column wrap;
 }
 
-.section-main-home article div.articulo{
+.section-main-home div.articulo{
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 15px;
     background-color: #fff;
     flex-flow: column nowrap;
 
 }
 
-.section-main-home article div img {
+.section-main-home div.articulo img {
     border-bottom: solid 1px #ebebeb;
 }
 
@@ -177,14 +179,10 @@ section img {
     color: #39b54a;
 }
 
-.div-truck:hover {
-    transition: all 1s;
-    transform: rotate(-90deg);    
-}
-
 .pre-des{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 15;
 }
 
 
@@ -201,25 +199,15 @@ section img {
     color: #39b54a;
     font-size: 16px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;    
 }
 
 .descripcion{
     font-size: 16px;
+    color: #666;
 }
-
-
-section article div div.descripcion{
-    opacity: 0;
-    
-}
-
-section article div div.descripcion:hover {
-    opacity: 1;
-    transition: opacity 1s;
-}
-    
+ 
 .create-form {
     padding: 20px 15px;
 }
@@ -300,13 +288,16 @@ footer section h3 {
         justify-content: space-between;
     }
     
-
-    .logo {
-        width: 45%;
-    }
-    
     .logo-and-bar{
         width: 75%;
+    }
+
+    .search-bar{
+        margin-right: 55;
+    }
+
+    .search-bar input{
+        font-size: 12px;
     }
 
     .copy-header {
@@ -315,13 +306,6 @@ footer section h3 {
         text-align: right;
     }
 
-    .search-bar{
-        width: 45%;
-        display: flex;
-    }
-    .search-bar input{
-        font-size: 12px;
-    }
 
     .burger {
         display: none;
@@ -351,23 +335,46 @@ footer section h3 {
         width: 100%;
     }
 
-    .section-main-home article {
+    .section-main-home div.card {
         width: 100%;
         display: flex;
         flex-flow: row wrap;
     }
     
     div.articulo{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         flex-basis: 45%;
         display: flex;
         flex-flow: column nowrap;
         margin: 10px;
+        box-shadow: none;
+        transition: 500ms;
     }
 
-    section article div div.descripcion{
+    div.articulo:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    section div.descripcion{
+        opacity: 0;
+        transition: 500ms;
+    }
+    
+    section div.descripcion:hover {
         opacity: 1;
-        
+    }
+
+    .div-truck:hover {
+        transition: all 1s linear;
+        transform: rotate(-90deg);    
+    }
+
+    #boton{
+        background-color: #1259c3;
+        transition: 500ms;
+    }
+
+    #boton:hover{
+        background-color: #0022AA
     }
 
 }
@@ -383,12 +390,11 @@ footer section h3 {
     }
 
     .logo{
-        width: 40%;
+        width: 50%;
     }
 
     .search-bar{
-        display: flex;
-        width: 40%;
+        margin-right: 150;
     }
 
     .search-bar input{
@@ -426,5 +432,24 @@ footer section h3 {
     div.articulo{
         flex-basis: 22.5%;
     }
+
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .footer-section{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    }
+
+    .footer-section h3 i:hover{
+        transition: 500ms;
+        color: #031b7a;
+
+    }
+
 
 }
