@@ -141,16 +141,19 @@ main, footer {
 .section-main-home div.articulo{
     display: flex;
     margin-bottom: 20px;
-    padding: 15px;
     background-color: #fff;
     flex-flow: column nowrap;
-
+    
 }
 
 .section-main-home div.articulo img {
-    border-bottom: solid 1px #ebebeb;
 }
 
+div.caja{
+    border-top: solid 1px #ebebeb;
+    display: flex;
+    padding: 15px;
+}
 
 .section-main-home h3{
     text-align: center;
@@ -161,6 +164,10 @@ main, footer {
 
 section img {
     width: 100%;
+}
+
+div.caja{
+    display: flex;
 }
 
 .div-truck{
@@ -281,7 +288,7 @@ footer section h3 {
     display: none;
 }
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
-@media (min-width: 768px) {
+@media (min-width: 361px) {
     div.main-header-top-bar {
         display: flex;
         flex-direction: row;
@@ -292,17 +299,23 @@ footer section h3 {
         width: 75%;
     }
 
+    .logo{
+        padding: 0;
+    }
+
     .search-bar{
-        margin-right: 55;
+        margin: 0;
     }
 
     .search-bar input{
-        font-size: 12px;
+        font-size: 10px;
+        padding: 2 2 2 4;
     }
 
     .copy-header {
         display: inline;
         width: 30%;
+        font-size: 9px;
         text-align: right;
     }
 
@@ -322,8 +335,20 @@ footer section h3 {
         justify-content: space-between;
     }
 
+    .left-navbar li{
+        text-align: left;
+    }
+
+    .right-navbar li a{
+        text-align: right;
+    }
+
     .main-navbar li {
         margin: 0 5px;
+    }
+
+    .main-navbar a{
+        font-size: 9px;
     }
 
     .section-main-home{
@@ -339,10 +364,11 @@ footer section h3 {
         width: 100%;
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-between;
     }
     
     div.articulo{
-        flex-basis: 45%;
+        flex-basis: 40%;
         display: flex;
         flex-flow: column nowrap;
         margin: 10px;
@@ -353,6 +379,33 @@ footer section h3 {
     div.articulo:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
+    .precio{
+        font-size: 0.8em;
+    }
+
+    .descuento{
+        font-size: 1em;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+    
+    .div-truck {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px #39b54a;
+        border-radius: 50%;
+        width: 20;
+        height: 20;
+        font-size: 10;
+        position: relative;
+        left: -10;
+        top: -10;
+        align-self: flex-end;
+        color: #39b54a;
+    }
+
 
     section div.descripcion{
         opacity: 0;
@@ -381,7 +434,7 @@ footer section h3 {
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
-@media (min-width: 1200px) {
+@media (min-width: 769px) {
 
     .logo-and-bar{
         width: 75%;
