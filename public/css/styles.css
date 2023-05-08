@@ -85,7 +85,7 @@ div.main-header-top-bar {
     font-weight: 400;
     display: block;
     text-align: center;
-    font-size: 12px;
+    font-size: 1em;
     width: 75vw;
 }
 
@@ -304,6 +304,7 @@ footer section h3 {
         display: inline;
         width: 30%;
         text-align: right;
+        font-size: 1em;
     }
 
 
@@ -326,6 +327,10 @@ footer section h3 {
         margin: 0 5px;
     }
 
+    .main-navbar a {
+        font-size: 0.9em;
+    }
+
     .section-main-home{
         display: flex;
         flex-flow: column wrap;            
@@ -339,6 +344,7 @@ footer section h3 {
         width: 100%;
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-between;
     }
     
     div.articulo{
@@ -414,7 +420,7 @@ footer section h3 {
     }
 
     .main-navbar a {
-        font-size: 12px;
+        font-size: 1.2em;
     }
 
     div.main-header-top-bar, .logo-and-bar {
@@ -424,7 +430,7 @@ footer section h3 {
 
     .copy-header {
         max-width: none;
-        font-size: 12px;
+        font-size: 1.7em;
         font-weight: 400;
         margin: 0;
     }
