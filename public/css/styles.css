@@ -10,7 +10,7 @@ body.body {
 
 .main-header {
     background-color: #EAC926;
-    padding: 24px;
+    padding: 10px;
     width: 100vw;
 }
 
@@ -26,17 +26,17 @@ div.main-header-top-bar {
     padding: 0 10;
 }
 
-.logo-and-bar{
+.logo-and-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.search-bar{
+.search-bar {
     width: 50%;
     height: fit-content;
     padding: 0;
-    margin: 0 10 0 30;
+    margin: 0;
     background-color: #fff;
     font-size: 12px;
     color: #666;
@@ -45,7 +45,7 @@ div.main-header-top-bar {
     justify-content: space-between;
 }
 
-.search-bar input{
+.search-bar input {
     border: 0;
     width: 85%;
     border-radius: 7px;
@@ -53,7 +53,7 @@ div.main-header-top-bar {
     font-size: 12px;
 }
 
-.search-input:focus{
+.search-input:focus {
     border: none;
     outline: none;
 }
@@ -73,7 +73,7 @@ div.main-header-top-bar {
     border: none;
 }
 
-.search-bar i{
+.search-bar i {
     width: 10%;
     display: flex;
     justify-content: flex-end;
@@ -115,19 +115,19 @@ div.main-header-top-bar {
     font-size: 12px;
 }
 
-main, footer {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+main,
+footer {
+    width: 90vw;
     display: flex;
     flex-direction: column;
+    margin: 0 5vw 0 5vw;
 }
 
 .banner {
     width: 100vw;
 }
 
-.section-main-home{
+.section-main-home {
     display: flex;
     flex-direction: column;
 }
@@ -135,24 +135,28 @@ main, footer {
 .section-main-home div.card {
     width: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
 }
 
-.section-main-home div.articulo{
+.section-main-home div.articulo {
     display: flex;
-    margin-bottom: 20px;
-    padding: 15px;
+    margin-bottom: 10px;
     background-color: #fff;
     flex-flow: column nowrap;
+}
 
+.pre-des,
+.descripcion {
+    padding: 0 15 0 15;
 }
 
 .section-main-home div.articulo img {
     border-bottom: solid 1px #ebebeb;
+    padding-bottom: 10px;
 }
 
 
-.section-main-home h3{
+.section-main-home h3 {
     text-align: center;
     font-weight: 400;
     font-size: 24px;
@@ -163,7 +167,7 @@ section img {
     width: 100%;
 }
 
-.div-truck{
+.div-truck {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,65 +179,42 @@ section img {
     position: relative;
     left: -15px;
     top: -15px;
-    align-self: flex-end;    
+    align-self: flex-end;
     color: #39b54a;
 }
 
-.pre-des{
+.pre-des,
+.descripcion {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 15;
+}
+
+.descripcion {
+    margin-bottom: 10;
 }
 
 
-.precio{
+.precio {
     width: 30%;
-    font-size: 18px;
+    font-size: 14px;
+/* EN FONT-SIZE >15 PX SE OVERLAP CON EL DIV DEL LADO */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.descuento{
+.descuento {
     width: 70%;
     color: #39b54a;
     font-size: 16px;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;    
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.descripcion{
+.descripcion {
     font-size: 16px;
     color: #666;
-}
- 
-.create-form {
-    padding: 20px 15px;
-}
-
-.control-formulario {
-    margin-bottom: 15px;
-}
-
-.control-formulario label {
-    margin-bottom: 5px;
-    font-style: italic;
-    display: block;
-}
-
-.control {
-    width: 100px;
-    padding: 8px;
-}
-
-.button-formulario {
-    background-color: #39b54a;
-    border: none;
-    font-size: 20px;
-    color: #ebebeb;
-    padding: 5px 10px;
-    border-radius: 5px;
 }
 
 footer,
@@ -246,15 +227,15 @@ section.footer-section i {
     align-items: center;
 }
 
-footer{
+footer {
     margin-top: 2em;
 }
 
-section.footer-section h3{
+section.footer-section h3 {
     margin: 0;
 }
 
-section.footer-section{
+section.footer-section {
     margin-bottom: 2em;
 }
 
@@ -277,34 +258,67 @@ footer section h3 {
 }
 
 
-.main-navbar{
+.main-navbar {
     display: none;
 }
+
+.descripcion {
+    display:none;
+}
+
+.div-truck {
+    width: 25px;
+    height: 25px;
+    font-size: 13;
+    top: -13px;
+}
+
+@media (max-width:360px){
+    .pre-des {
+        margin-bottom: 10px;
+    }
+
+    .precio{
+        font-size: 18px;
+    }
+
+    .div-truck {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        top: -15px;
+    }
+
+}
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
-@media (min-width: 768px) {
+@media (min-width: 361px) {
     div.main-header-top-bar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    
-    .logo-and-bar{
-        width: 75%;
+
+    .logo-and-bar {
+        width: 70%;
     }
 
-    .search-bar{
-        margin-right: 55;
+    .logo {
+        padding: 0 5;
     }
 
-    .search-bar input{
-        font-size: 12px;
+    .search-bar {
+        margin: 0 5 0 5;
+    }
+
+    .search-bar input {
+        font-size: 10px;
     }
 
     .copy-header {
         display: inline;
         width: 30%;
         text-align: right;
-        font-size: 1em;
+        font-size: 0.65em;
     }
 
 
@@ -328,12 +342,20 @@ footer section h3 {
     }
 
     .main-navbar a {
-        font-size: 0.9em;
+        font-size: 0.5em;
     }
 
-    .section-main-home{
+    .right-navbar a {
+        text-align: right;
+    }
+
+    .left-navbar a {
+        text-align: left;
+    }
+
+    .section-main-home {
         display: flex;
-        flex-flow: column wrap;            
+        flex-flow: column wrap;
     }
 
     .section-main-home h3 {
@@ -341,70 +363,67 @@ footer section h3 {
     }
 
     .section-main-home div.card {
-        width: 100%;
-        display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
     }
-    
-    div.articulo{
-        flex-basis: 45%;
+
+    div.articulo {
+        flex-basis: 46.92%;
         display: flex;
         flex-flow: column nowrap;
-        margin: 10px;
-        box-shadow: none;
-        transition: 500ms;
-    }
-
-    div.articulo:hover{
+        margin: 0 5 10 5;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    section div.descripcion{
-        opacity: 0;
         transition: 500ms;
-    }
-    
-    section div.descripcion:hover {
-        opacity: 1;
+    }    
+
+    .precio{
+        justify-content: flex-start;
     }
 
-    .div-truck:hover {
-        transition: all 1s linear;
-        transform: rotate(-90deg);    
+    .descuento {
+        justify-content: flex-end;
     }
 
-    #boton{
-        background-color: #1259c3;
-        transition: 500ms;
-    }
-
-    #boton:hover{
-        background-color: #0022AA
+    .descripcion {
+        display: flex;;
     }
 
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
-@media (min-width: 1200px) {
+@media (min-width: 769px) {
 
-    .logo-and-bar{
+    section div.descripcion {
+        opacity: 0;
+        transition: 500ms;
+    }
+
+    section div.descripcion:hover {
+        opacity: 1;
+    }
+
+    .logo-and-bar {
         width: 75%;
         display: flex;
         justify-content: space-between;
     }
 
-    .logo{
+    .logo {
         width: 50%;
     }
 
-    .search-bar{
-        margin-right: 150;
+    .search-bar {
+        margin-right: 15;
     }
 
-    .search-bar input{
-        font-size: 12px;
+    .search-bar input {
+        font-size: 1em;
+        padding: 1 0 2 5;
+    }
+
+    .search-bar i {
+        font-size: 1em;
     }
 
     .burger {
@@ -420,41 +439,61 @@ footer section h3 {
     }
 
     .main-navbar a {
-        font-size: 1.2em;
+        font-size: 0.8em;
     }
 
-    div.main-header-top-bar, .logo-and-bar {
+    div.main-header-top-bar,
+    .logo-and-bar {
         display: flex;
         align-items: center;
     }
 
     .copy-header {
         max-width: none;
-        font-size: 1.7em;
+        font-size: 1em;
         font-weight: 400;
         margin: 0;
     }
 
-    div.articulo{
-        flex-basis: 22.5%;
+    div.articulo {
+        flex-basis: 23.55%;
+        box-shadow: none;
     }
 
-    footer{
+    footer {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
-    .footer-section{
-    display: flex;
-    flex-direction: row;
-    width: 30%;
+    .footer-section {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
     }
 
-    .footer-section h3 i:hover{
+    .footer-section h3 i:hover {
         transition: 500ms;
         color: #031b7a;
 
+    }
+
+    div.articulo:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .div-truck:hover {
+        transition: all 1s linear;
+        transform: rotate(-90deg);
+    }
+
+    #boton {
+        background-color: #1259c3;
+        transition: 500ms;
+    }
+
+    #boton:hover {
+        background-color: #0022AA
     }
 
 
