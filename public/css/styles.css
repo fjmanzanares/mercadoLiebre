@@ -10,7 +10,7 @@ body.body {
 
 .main-header {
     background-color: #EAC926;
-    padding: 10px;
+    padding: 5;
     width: 100%;
 }
 
@@ -338,7 +338,7 @@ footer section h3 {
     }
 
     .main-navbar li {
-        margin: 0 5px;
+        padding-right: 5px;
     }
 
     .main-navbar a {
